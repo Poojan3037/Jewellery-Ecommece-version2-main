@@ -1,0 +1,281 @@
+:root{
+    --Hover-color:rgba(127, 255, 212, 0.068);
+}
+
+nav.Main-Nav {
+    width: 100vw;
+    position: sticky;
+    background-color: var(--th-color);
+    height: 65px;
+    line-height: 65px;
+    z-index: 99999;
+    text-transform: uppercase;
+}
+
+.Main-Nav .Nav-Wrapper {
+    position: relative;
+    max-width: 1250px;
+    padding: 0 30px !important;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Nav-Wrapper .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    line-height: 65px;
+   
+}
+
+.Nav-Wrapper .Nav-Links {
+    display: flex;
+}
+
+.Nav-Links li a {
+    color: var(--bg-color);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 9px 15px !important;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.Nav-Links li a:hover {
+    background-color: var(--Hover-color);
+}
+
+.Nav-Links .Drop-Down {
+    background-color: var(--th-color);
+    width: 180px;
+    line-height: 45px;
+    position: absolute;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.Drop-Down li a {
+    width: 100%;
+    display: block;
+    border-radius: 0;
+    padding: 0 0 0 15px !important;
+}
+
+.Nav-Links li:hover .Drop-Down {
+    visibility: visible;
+    opacity: 1;
+    top: 65px;
+}
+
+.Mega-Box {
+    position: absolute;
+    top: 85px;
+    background: var(--th-color);
+    width: 100%;
+    left: 0%;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.Mega-Box .Mega-Box-Content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px 20px !important;
+}
+
+.Mega-Box-Content .Content-Row {
+    width: calc(25% - 30px);
+    line-height: 45px;
+    color: var(--bg-color);
+}
+
+.Content-Row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Content-Row header {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--bg-color);
+}
+
+.Content-Row .Mega-Links {
+    margin-left: -40px !important;
+}
+
+.Mega-Links li {
+    padding: 0 20px !important;
+}
+
+.Mega-Links li a {
+    padding: 0 20px !important;
+    font-size: 15px;
+    display: block;
+}
+.Nav-Links li:hover .Mega-Box{
+    top: 65px;
+    transition: all 0.3s ease;
+    visibility:visible;
+    opacity: 1;
+}
+.Nav-Links .for-mobile{
+    display: none;
+}
+#showDrop{
+    display: none;
+}
+.Nav-Wrapper .toggle-button-nav{
+    font-size: 20px;
+    color: var(--bg-color);
+    cursor: pointer;  
+    display: none; 
+}
+.button-cancel{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+#button-menu{
+    display: none;
+}
+#showMenu{
+    display: none;
+}
+/* Media Query */
+
+@media screen and (max-width:1000px) {
+    .Nav-Wrapper .toggle-button-nav{
+        display: block;
+    }
+    .Nav-Wrapper .Nav-Links{
+        display: block;
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        max-width: 350px;
+        background: var(--th-color);
+        top: 0%;
+        left:-100%;
+        padding: 50px 10px!important;
+        line-height: 50px;
+        overflow-y: auto;
+        transition: all 0.8s ease;
+        
+    }
+    #button-menu:checked ~ .Nav-Links{
+        left: 0%;
+        transition: all 0.8s ease;
+    }
+    
+   
+   .Nav-Links::-webkit-scrollbar{
+       width: 0px;
+   }
+    .Nav-Links li{
+        margin: 15px 10px !important;
+
+    }
+    .Nav-Links li a{
+        padding: 0 20px !important;
+        display: block;    
+    }
+    .Nav-Links .Drop-Down{
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        top: 65px;
+        padding-left:20px !important ;
+        max-height: 0px;
+        width: 100%;
+        overflow: hidden;
+        transition:ease 0.3s all;
+    }
+    #showDrop:checked ~ .Drop-Down, #showMenu:checked ~ .Mega-Box{
+        max-height: 100%;
+        transition: 0.8s ;
+    }
+    .Drop-Down li {
+        margin: 0% !important;
+
+    }
+    .Drop-Down li a{
+        border-radius: 5px;
+    }
+    .Nav-Links .for-mobile{
+        display: block;
+        font-size: 15px;
+        color: var(--bg-color);
+        cursor: pointer;
+        padding-left: 20px !important;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+    }
+    .Nav-Links .for-desktop{
+        display: none;
+    }
+    .Nav-Links .for-mobile:hover{
+        background-color: var(--Hover-color);
+    }
+    .Mega-Box {
+        position:static;
+        top: 65px;
+        background: var(--th-color);
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        visibility:visible;
+        opacity: 1;
+        text-transform: uppercase;
+    }
+    
+    .Mega-Box .Mega-Box-Content {
+        /* display: flex; */
+        flex-direction: column;
+        padding: 20px 20px 0 20px !important;
+    }
+    
+    .Mega-Box-Content .Content-Row {
+       width: 100%;
+       display: block;
+       margin-bottom: 15px !important;
+    }
+    .Content-Row .Mega-Links {
+       padding-left: 15px !important;
+    }
+    .Mega-Links  li{
+        margin: 0% !important;
+    }
+ 
+}
+.Addition-Icon{
+    height: 65px;
+    line-height: 65px;
+    color: var(--bg-color);
+    /* border: 1px solid; */
+}
+.Addition-Icon i{
+    font-size: 20px;
+    margin:0 15px !important;
+    cursor: pointer;
+    color: var(--bg-color);
+    font-style: normal;
+}
+
+@media(max-width:450px){
+    .Addition-Icon{
+        display: none;
+    }
+}
+

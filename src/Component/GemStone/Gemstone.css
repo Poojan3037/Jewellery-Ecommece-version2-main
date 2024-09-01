@@ -1,0 +1,65 @@
+.Header-Gem{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    /* border: 1px solid; */
+    font-size: 70px;
+    background-color: var(--bg-color);
+}
+@media(max-width:800px){
+    .Header-Gem{
+        font-size: 50px;
+    }
+}
+@media(max-width:400px){
+    .Header-Gem{
+        font-size: 30px;
+    }
+}
+.Gem-Stone-Area{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-direction:row;
+    min-height: 20px ;
+    padding: 50px 0 !important;
+    /* border: 1px solid; */
+    margin: 0% auto !important;
+    flex-wrap: wrap;
+}
+.Gems-Card{
+    width:300px;
+    height: 300px;
+    /* border: 1px solid; */
+    position:relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px !important;
+}
+.Gems-Card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.Gems-Card .GemsName{
+    position: absolute;
+    top:-100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.GemsName h2{
+    z-index: 9999999;
+    color:whitesmoke;
+    font-size:40px;
+}
+.Gems-Card:hover .GemsName{
+    top: 0%;
+    transition: 1s;
+}

@@ -1,0 +1,105 @@
+.Login-Box{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin:100px auto !important;
+    min-height: 100px;
+    flex-wrap: wrap;
+}
+
+
+.Login-Division,.SignUp-Division{
+    width: 45%;
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    min-height: 300px;
+    flex-direction: column;
+    /* border: 1px solid; */
+    position: relative;
+    background-color: var(--bg-color);
+}
+@media(max-width:1000px){
+    .Login-Division,.SignUp-Division{
+        width: 100%;
+        margin-bottom: 50px !important;
+    }
+}
+.LoginHeader{
+    font-size: 3rem;
+    margin-bottom: 20px !important;
+    display: block;
+    background-color: var(--th-color);
+    color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+}
+.Login-Division label,.Login-Division input,
+.SignUp-Division label,.SignUp-Division input{
+    margin: 0px 50px 15px 50px !important;
+}
+.Login-Division input,.SignUp-Division input{
+    width: 80%;
+    border: none;
+    background-color: var(--bg-color);
+    height: 50px;
+    color: var(--th-color);
+    padding: 0 20px !important;
+    outline: none;
+}
+.Login-Option{
+    width: 80%;
+    height: 50px;
+    padding: 0 50px !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto !important;
+}
+.Login-Option i{
+    font-size: 25px;
+}
+.Login-Division button , .SignUp-Division button{
+    margin: 15px auto 15px auto !important ;
+    width: 120px;
+    height: 40px;
+    color: var(--bg-color);
+    background-color: var(--th-color);
+    border: none;
+}
+.Login-Option .fi-brands-facebook:hover{
+    color:#4267B2;
+    cursor: pointer;
+    transition: 0.3s ;
+    font-size: 28px;
+}
+.Login-Option .fi-brands-google:hover{
+    color:#DB4437;
+    cursor: pointer;
+    transition: 0.3s ;
+    font-size: 28px;
+}
+.Login-Option .fi-brands-twitter:hover{
+    color:#1DA1F2;
+    cursor: pointer;
+    transition: 0.3s ;
+    font-size: 28px;
+}
+.SignUp-Division .Login-Img,
+.Login-Division .Login-Img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: 1s;
+}
+
+.SignUp-Division:hover .Login-Img,
+.Login-Division:hover .Login-Img{
+    opacity: 0;
+    /* display: none; */
+    visibility: hidden;
+    transition: 1s;
+}
+

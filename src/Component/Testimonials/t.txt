@@ -1,0 +1,25 @@
+ <div className='Testimonial-Fluid'>
+        <h1>Client Testimonials</h1>
+        <p>What They Say</p>
+        <div className='Testimonial-Card'>
+            <div className='Testimonial-Profile'>
+              <img src={Face}/>
+            </div>
+            <p>All Perfect !! I have three sites with magento , this theme is the best !! Excellent support , advice theme installation package , sorry for English, are Italian but I had no problem !! Thank you !</p>
+            <h4>Adam Smith / Customer</h4>
+        </div>
+
+    </div> 
+
+
+    {/* <div className='Testimonial-Fluid'>
+        <h1>Client Testimonials</h1>
+        <p>What They Say</p>
+        <div className='Testimonial-Card'>
+          <div className='Testimonial-Profile'>
+            <img loading="lazy" src={Face} />
+          </div>
+          <p>All Perfect !! I have three sites with magento , this theme is the best !! Excellent support , advice theme installation package , sorry for English, are Italian but I had no problem !! Thank you!</p>
+          <h4>Adam Smith / Customer</h4>
+        </div>
+      </div> */}

@@ -1,0 +1,34 @@
+.Size-Header{
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    font-size: 70px;
+    text-align: center;
+    background-color: var(--bg-color);
+}
+@media(max-width:800px){
+    .Size-Header{
+        font-size: 50px;
+    }
+}
+@media(max-width:400px){
+    .Size-Header{
+        font-size: 30px;
+    }
+}
+.Size-Image{
+    /* border: 1px solid; */
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    margin: 0% auto !important;
+    display: grid;
+    justify-content: center;;
+    align-items: center;
+}
+.Size-Image img{
+    width:100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}

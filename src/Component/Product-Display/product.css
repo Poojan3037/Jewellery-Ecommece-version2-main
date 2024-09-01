@@ -1,0 +1,156 @@
+#Product-Display{
+    margin: 0% auto !important;
+    width: var(--lg-container);
+    min-height: 10px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    align-items: center;
+}
+#tw-Trustness{
+    /* border: 1px solid; */
+    margin-top: 50px !important;
+    padding: 0 50px !important;
+    width:100%;
+    min-height:10px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#tw-Trustness .tw-Trustness-Box{
+    /* border: 1px solid; */
+    margin: 10px 0px !important;
+    width:300px;
+    height: 150px;
+    display: flex;
+    background-color: var(--bg-color);
+    text-align: justify;
+}
+.tw-Iconbox{
+    /* border: 1px solid; */
+    width: 70px;
+    height: 100%;
+    padding: 20px 0 !important;
+    display: flex;
+    justify-content: center;
+}
+.tw-Iconbox i{
+    font-size: 30px;
+}
+.tw-Iconbox-Detail{
+    /* border: 1px solid; */
+    width: 230px;
+    height: 100%;
+    padding: 20px 20px!important;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+/* Product Display Start */
+
+#tw-ProductDisplay{
+    /* border:1px solid; */
+    margin-top: 50px !important;
+    padding: 0 50px !important;
+    width:100%;
+    min-height:10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.tw-DisplayCard{
+    /* border: 1px solid; */
+    width: 550px;
+    height: 250px;
+    position: relative;  
+    margin:20px 0 !important; 
+    border-radius: 5px;
+    overflow: hidden;
+}
+.tw-DisplayCard img{
+    min-width:100%;
+    height:auto;
+    object-fit:scale-down;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.tw-DisplayCard-Info{
+    position: absolute;
+    width:100%;
+    height: 250px ;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-end;
+    padding: 0 20px !important;
+}
+.tw-DisplayCard-Info h1{
+    text-align: end;
+    font-weight:bolder;
+    /* text-align: center; */
+    margin-bottom: 20px !important;
+    
+}
+.tw-DisplayCard-Info p{
+    text-transform:uppercase;
+}
+.tw-DisplayCard-Info #Rings-Shop-Now{
+    border: 0px;
+    cursor: pointer;
+    color: var(--fn-color);
+    background: transparent;
+   font-size: 15px;
+   border-bottom: 1px solid var(--fn-color);
+ 
+}
+#Rings-Shop-Now:hover{
+    border-bottom: 1px solid var(--th-color);
+    transition: 0.8s ease-in-out;
+    color: var(--th-color);
+}
+
+
+
+@media(max-width:1200px){
+       #Product-Display{
+           width: var(--md-container);
+       }
+
+       #tw-Trustness{
+           padding: 0 !important;
+       }
+}
+@media(max-width:700px){
+       #Product-Display{
+           width: var(--sl-container);
+       }
+       #tw-Trustness{
+        padding: 0 !important;
+    }
+}
+@media(max-width:550px){
+       #Product-Display{
+           width: var(--xsl-container);
+       }
+       #tw-Trustness{
+        padding: 0 !important;
+    }
+
+    #tw-ProductDisplay{
+        padding: 0 !important;
+    }
+       /* .tw-DisplayCard{
+           width:90%;
+           height: 250px;
+       }
+       .tw-DisplayCard img{
+           width: 90%;
+           height:250px;
+           object-fit:cover;
+       } */
+}

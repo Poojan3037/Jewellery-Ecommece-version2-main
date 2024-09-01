@@ -1,0 +1,39 @@
+ // <div id='full'>
+        //     <div id='Container'>
+        //         <div className='container-card'>
+        //             <div className='Product-Preview'>
+        //                 <img src={p1} />
+        //                 <div className='Upper-Image'>
+        //                     <img src={p1u} />
+        //                     <div className='User-Features'>
+        //                         <div className='icon-box'>
+        //                             <FontAwesomeIcon className='Icon' icon={faCodeCompare} />
+        //                         </div>
+
+        //                         <div className='icon-box'>
+        //                             <FontAwesomeIcon className='Icon' icon={faCartShopping} />
+        //                         </div>
+
+        //                         <div className='icon-box'>
+        //                             <FontAwesomeIcon className='Icon' icon={faHeart} />
+        //                         </div>
+
+        //                         <div className='icon-box'>
+        //                             <FontAwesomeIcon className='Icon' icon={faEye} />
+        //                         </div>
+
+
+        //                     </div>
+        //                 </div>
+        //             </div>
+        //             <div className='Product-Detail'>
+        //                 <h6>$450.00</h6>
+        //                 <h2>Golden Earning</h2>
+        //                 <div className='Rating-Manf'>
+        //                     <h6>Titan Product</h6>
+        //                 </div>
+        //             </div>
+        //         </div>
+
+        //     </div>
+        // </div>

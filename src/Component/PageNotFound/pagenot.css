@@ -1,0 +1,23 @@
+.tw-Not-Found{
+    width:var(--lg-container);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto !important;
+    /* border: 1px solid; */
+    flex-direction: column;
+}
+.tw-Not-Found img{
+    width: 100%;
+    max-height:60vh;
+    object-fit: cover;
+    object-position: center;
+}
+.GotoHomePage{
+    border:none;
+    width:fit-content;
+    background: transparent;
+    
+    cursor: pointer;
+}

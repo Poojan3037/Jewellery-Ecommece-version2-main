@@ -1,0 +1,40 @@
+.Gallery-Divison{
+    /* border: 1px solid */
+    margin: 0% auto !important;
+    min-height: 100px;
+    /* background-color: black; */
+}
+/* 1stRow */
+.row-1{
+   
+    min-height: 400px;
+}
+.column-1{
+    min-height: 400px;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+
+
+.Gallery-Divison img{
+    width: 100%;
+    height:400px;
+    object-fit: cover;
+    object-position: center;
+} 
+
+@media(min-width:2500px){
+   
+    .Gallery-Divison img{
+        width: 100%;
+        height:700px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.col-xl-3:hover img{
+    filter:grayscale(0.7);
+    transition: all .5s ease-in-out;
+    width: 110%;
+}
+

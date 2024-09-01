@@ -1,0 +1,123 @@
+.tw-shopping-head{
+    display: block;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tw-shopping-head h1{
+    font-size: 7.5em;
+}
+@media(max-width:500px){
+    .tw-shopping-head h1{
+        font-size: 3.5em;
+    }
+}
+.tw-shopping-area{
+    /* border: 1px solid; */
+    margin: 0% auto !important;
+    min-height: 10px;
+    margin-top: 50px !important;
+}
+.tw-shopping-area .row .col-2 > :nth-child(2){
+    /* border: 1px solid; */
+    margin-top: 20px !important;
+}
+.Filter-Head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding:0 20px !important ;
+    height: 50px;
+   
+}
+.Filter-Head h5{
+    margin: 0% !important;
+}
+
+.clr-All{
+    text-align: center;
+    background: transparent;
+    text-decoration: underline !important;
+    border: none;
+}
+
+.tw-shopping-area .row .col-lg-2 .col-12{
+    margin-bottom: 5px !important;
+    border-top:1px solid rgba(0, 0, 0, 0.409);
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 0 20px !important;
+    overflow: hidden;
+}
+.tw-shopping-area .row .col-lg-2 > :last-child{
+    border-bottom: 1px solid;
+}
+.Btn-Activation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+ .Range{
+  height: 0px;
+  transition: all .5s ease;
+}
+.Range li{
+    /* width: 100%; */
+    font-size: 12px;
+    font-weight: 300;
+}
+.Range li input{
+    margin-right: 10px !important;
+ 
+}
+ .rotate45{
+    transform: rotate(45deg);
+}
+.fa-minus{
+    display:none;
+}
+
+.BtnClose{
+    display:block;
+}
+.BtnPlus{
+    display: none;
+}
+
+.col-sm-6{
+
+ margin: 0% auto !important;
+}
+
+/* Card Area */
+
+.tw-shopping-area .row .col-lg-10{
+    /* border: 1px solid; */
+    min-height: 500px;
+    margin: 0  auto !important;
+}
+.tw-shopping-area .row .col-lg-10 > :first-child{
+    /* border: 1px solid; */
+    width: 100%;
+    min-height: 50px;
+    padding:20px !important;
+}
+.tw-shopping-area .Product-Showcast{
+    display: flex;
+    /* border: 1px solid; */
+    min-height: 500px;
+    width: 100%;
+    padding:20px !important;
+    justify-content: space-around;
+}
+
